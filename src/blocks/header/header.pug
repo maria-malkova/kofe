@@ -1,0 +1,18 @@
+mixin header(modifier)
+  header.header&attributes(attributes)
+    .header__area
+      .header__picture
+        .header__hamburger
+          .header__hamburger-box
+            .header__hamburger-inner
+        img(src='img/logo.svg' alt='Логотип').header__logo
+        img(src='img/mail.svg' alt='Почта').header__mail
+      .header__candy
+        ul.header__menu  
+          li.header__item: a.header__link(href='#') Кофе оптом
+          li.header__item: a.header__link(href='#') White Label
+          li.header__item: a.header__link(href='#') Бесплатная кофемашина
+        +contact('header')
+      .header__connect
+        a.header__tel(href='tel:+78126034911') +7 812 603 49 11
+        button(type='button').header__button Оставить заявку

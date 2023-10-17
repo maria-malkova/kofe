@@ -1,0 +1,72 @@
+.form2 {
+    background: #F5F8F9;
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }  
+    
+    &__pack {
+        margin-left: -180px;
+        margin-top: -20px;
+        margin-bottom: -32px;
+    }
+    
+    &__info {
+        max-width: 705px;
+    }
+
+    &__title {
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        text-transform: uppercase;
+        color: #1A1C1D;
+        margin-top: 76px;
+        margin-bottom: 26px;
+    }
+
+    &__send {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    &__phone {
+        font-size: 17px;
+        line-height: 140%;
+        color: #32363C;
+        opacity: 0.4;
+        width: 446px;
+        height: 62px;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        margin-right: 20px;
+        padding: 20px 
+    }
+
+    &__buttons {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 240px;
+        height: 62px;
+        background: #009688;
+        border-radius: 100px;        
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 140%;
+        color: #989A9D;
+        max-width: 446px;
+    }
+}

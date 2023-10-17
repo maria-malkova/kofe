@@ -1,0 +1,23 @@
+mixin form(picture='',text='')
+  section.form&attributes(attributes)
+    .form__area
+      img.form__image(src=`img/form_${picture}.png` alt='Пачка кофе' class=`${picture==='coffee' ? 'form__image--coffee' : picture==='cap' ? 'form__image--cap' : picture==='kotik' ? 'form__image--kotik' : ''}` )
+      .form__info  
+        h2.form__titles(class=`${picture==='cap' ? 'form__titles--cap' : ''}` )
+          if (picture==='cap')
+            span.form__title Делаем кофе,
+          else 
+            span.form__title Оставьте заявку сейчас!
+          span.form__title=text 
+        if (picture==='cap') 
+          h3.form__subtitles Оставьте заявку сейчас! <br/>Получите каталог сортов кофе  с подробным описанием и оптовыми ценами!
+        form(action='send.php' method='post').form__send
+          input(type='text' name='phone' placeholder='Ваш номер телефона').form__phone
+          button.form__buttons(type='submit' class=`${picture==='kotik' ? 'form__buttons--kotik' : ''}`)
+            if (picture==='kotik')
+              | Погнали!
+            else
+              | Оставить заявку
+        p.form__text Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.      
+
+      

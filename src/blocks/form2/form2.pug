@@ -1,0 +1,10 @@
+mixin form2(modifier)
+  section.form2&attributes(attributes)
+    .form2__area
+      img(src='img/form2_coffee.png' alt='Пачка кофе').form2__pack
+      .form2__info 
+        h1.form2__title Оставьте заявку сейчас! <br>Получите оптовый прайс на весь ассортимент.
+        form(action='send.php' method='post').form2__send
+          input(type='text' name='phone' placeholder='Ваш номер телефона').form2__phone
+          input(type='submit' value='Оставить заявку').form2__buttons
+        p.form2__text Позвоним вам и ответим на все ваши вопросы, поможем выбрать сорт кофе.

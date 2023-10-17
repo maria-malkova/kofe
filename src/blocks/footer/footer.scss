@@ -1,0 +1,128 @@
+.footer {
+    margin-top: 116px;
+    border-top: 1px solid #EAEAEA;
+
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #EAEAEA;
+        margin-bottom: 20px;
+    }
+
+    &__logo {
+        margin-top: -70px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        width: 100%;
+        max-width: 226px;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: px-to-em(14);
+        line-height: 130%;
+        color: #9F9F9F;
+    }
+
+    &__menu {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-top: 56px;
+        margin-right: 10px;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: px-to-em(18);
+        line-height: lh-to-per(27, 18);
+        text-transform: uppercase;
+        color: #32363C;   
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 236px;
+        margin-top: 20px;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__link {
+        margin-bottom: 16px;
+        text-decoration: none;
+        display: block;
+        text-transform: none;
+        font-family: 'Lato';
+        font-weight: 500;
+        font-size: px-to-em(16);
+        line-height: lh-to-per(19, 16);
+        color: #9F9F9F;
+
+        &:hover {
+            color: #009688;
+        }
+    }
+
+    &__policy {
+        width: 100%;    
+        max-width: 1080px;
+        margin: auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__under {
+        text-decoration: none;
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: px-to-em(14);
+        line-height: lh-to-per(17, 14);
+        text-align: right;
+        color: #9F9F9F;
+    }
+
+    @media screen and (max-width: 991px) {
+        padding: 0 16px;
+
+        &__menu {
+            width: 100%;
+            max-width: 350px;
+            margin: 0 20px;
+        }
+    }
+
+    @media screen and (max-width: 719px) {
+        
+        &__area {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__menu {
+            margin: 0;
+        }
+
+        &__link {
+            font-size: px-to-em(14);
+        }
+
+        &__text {
+            width: 100%;
+            max-width: 330px;
+        }
+
+        &__logo {
+            margin-left: 70px;
+        }
+
+    }
+
+}

@@ -1,0 +1,180 @@
+.review {
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 540px;
+    margin-top: 130px;
+    margin-bottom: 40px;
+
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+
+  &__gallery {
+    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    align-items: flex-start;
+    padding-right: 10px;
+  }
+
+  &__right {
+    transform: scale(-1);
+    cursor: pointer;
+  }
+
+  &__left {
+    cursor: pointer;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 920px;
+    display: flex;
+  }
+
+  &__card {
+    border: 10px solid #F5F8F9;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 100%;
+    max-width: 290px;
+    margin-left: 86px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  &__photo {
+    margin-bottom: 40px;
+    border-radius: 50%;
+  }
+
+
+  &__description {
+    margin: 80px 80px 0 0;
+    max-width: 540px;
+    margin-bottom: 56px;
+  }
+
+  &__name {
+    margin: 0 auto 3px;
+    font-family: 'Lato';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #32363C;
+  }
+
+  &__job {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 140%;
+    color: #989A9D;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 480px;
+    margin-top: 25px;
+    font-family: 'Lato';
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: #32363C;
+  }
+
+  &__arrow {
+    display: none;
+  }
+
+  .slick-initialized .slick-slide {
+    display: flex;
+  }
+
+
+  @media screen and (max-width: 1101px) {
+    &__area {
+      padding: 0 16px;
+    }
+
+    &__gallery {
+      padding: 0 26px;
+
+    }
+
+    &__card {
+      flex-direction: column;
+      border: none;
+    }
+
+    &__image {
+      width: 100%;
+      max-width: 540px;
+      margin: 0 15px 0 0;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+
+    &__description {
+      margin: 20px 0 0 0;
+    }
+
+    &__photo {
+      margin-bottom: 0;
+      margin-right: 5px;
+      max-width: 120px;
+    }
+
+    &__company {
+      max-width: 80%;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 47px;
+    }
+
+    &__text {
+      font-size: 16px;
+    }
+
+    &__right, &__left {
+      display: none;
+    } 
+
+    &__arrow {
+      display: block;
+      cursor: pointer;
+    }
+
+    &__rightmini {
+      transform: scale(-1);
+      margin-top: 20px;
+    }
+
+    &__leftmini, &__rightmini {
+      max-width: 35px;
+      color: #EAEAEA;
+    }
+
+  }
+  
+}

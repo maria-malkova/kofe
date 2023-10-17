@@ -1,0 +1,245 @@
+.expert {
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0 40px;
+    }
+
+    &__title {
+        max-width: 600px;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: px-to-em(40);
+        line-height: lh-to-per(59, 40);
+        text-transform: uppercase;
+        color: #1A1C1D;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: px-to-em(18);
+        line-height: lh-to-per(22, 18);
+
+        width: 240px;
+        height: 62px;
+        left: 1020px;
+        top: 6864px;
+        background: #009688;
+        border-radius: 100px;
+        outline: none;  // убрать красную рамку
+
+        cursor: pointer;
+
+        &:hover {
+            background: #00B0A0;
+            outline: none;
+        }
+
+        &:active {
+            background: #007D71;
+            outline: none; 
+        }
+    }
+
+    &__gallery {
+        width: 100%;
+        max-width: 1080px;
+        margin-bottom: 64px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__list {
+        width: 100%;
+        max-width: 1080px;
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+
+ /*    вариант для добавления карточек (вместо list включить это):
+    
+    &__list { 
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__card {
+        margin-right: 44px;
+    }
+
+    &__card:nth-child(3n) {
+        margin-right: 0;
+    }
+
+ */
+
+
+    &__left, &__right {
+        max-width: 40px;
+        cursor: pointer;
+
+        padding: 185px 0;
+        border: 2px solid #F5F8F9;
+        background-color: #F5F8F9;
+    }
+
+    &__right {
+        transform: scale(-1);
+    }
+
+    &__card {
+        max-width: 330px;
+        margin: 0 20px;
+    }
+    
+    &__photo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        margin-bottom: 6px;
+        font-family: 'Lato';
+        font-weight: 600;
+        font-size: px-to-em(24);
+        line-height: 120%;
+        color: #32363C;
+    }
+
+    &__job {
+        font-family: 'Lato'; 
+        font-weight: 400;
+        font-size: px-to-em(15);
+        line-height: 140%;
+        color: #989A9D;
+    }
+
+    &__buttons_mini {
+        display: none;
+    }
+
+
+    @media screen and (min-width:899px) and (max-width: 1225px) {
+        &__area {
+          padding: 0 16px;
+        }
+
+        &__title {
+            font-size: px-to-em(32);
+        line-height: lh-to-per(47, 32);
+        }
+
+        &__list {
+            width: 100%;
+            max-width: 800px;
+        }
+
+        &__left, &__right {
+            padding: 148px 0;
+        }
+
+    }
+
+    @media screen and (min-width:499px) and (max-width: 900px) {
+        &__area {
+            padding: 0 16px;
+        }
+
+        &__title {
+            max-width: 330px;
+            font-size: px-to-em(30);
+            line-height: lh-to-per(47, 30);
+        }
+
+        &__list {
+            width: 100%;
+            max-width: 650px;
+        }
+
+        &__name {
+            font-size: px-to-em(20);
+        }
+
+        &__left, &__right {
+            padding: 142px 0;
+        }
+
+    }
+
+    @media screen and (max-width: 500px) {
+        &__area {
+            padding: 0 16px;
+        }
+
+        &__buttons {
+            display: none;
+        }
+
+        &__title {
+            font-size: px-to-em(26);
+        line-height: lh-to-per(40, 26);
+        }
+
+        &__list {
+            width: 100%;
+            max-width: 220px;
+        }
+
+        &__name {
+            font-size: px-to-em(20);
+        }
+    
+        &__job {
+            font-size: px-to-em(14);
+        }
+
+        &__left, &__right {
+            padding: 138px 0;
+        }
+
+        &__buttons_mini {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            font-weight: 600;
+            font-size: px-to-em(16);
+            line-height: lh-to-em(22, 18);
+
+            width: 240px;
+            height: 62px;
+            left: 1020px;
+            top: 6864px;
+            background: #009688;
+            border-radius: 100px;
+            outline: none;  // убрать красную рамку
+
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+    }
+   
+
+
+}

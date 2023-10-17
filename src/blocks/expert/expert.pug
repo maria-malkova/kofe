@@ -1,0 +1,38 @@
+mixin expert(modifier)
+  section.expert&attributes(attributes)
+    .expert__area 
+      .expert__header 
+        h2.expert__title Наши профессионалы сделают&nbsp;всё на высшем уровне
+        input(tipe='submit' value='История ПКМ').expert__buttons
+      .expert__gallery
+        img(src='img/expert_arrow.png', alt='Стрелочка влево').expert__left
+        ul.expert__list
+          li.expert__card 
+            img(src='img/expert_photo1.jpg' alt='Олег Булгаков').expert__photo
+            h3.expert__name Олег Булгаков
+            h4.expert__job Менеджер по работе с оптовыми клиентами
+          li.expert__card 
+            img(src='img/expert_photo2.jpg' alt='Оксана Павловна').expert__photo
+            h3.expert__name Оксана Павловна
+            h4.expert__job Представитель компании в Сочи
+          li.expert__card 
+            img(src='img/expert_photo3.jpg' alt='Виталий Гончаренко').expert__photo
+            h3.expert__name Виталий Гончаренко
+            h4.expert__job Бариста
+          
+          li.expert__card 
+            img(src='img/expert_photo4.png' alt='Человек Паук').expert__photo
+            h3.expert__name Человек Паук 
+            h4.expert__job Менеджер по работе с проблемными клиентами
+          li.expert__card 
+            img(src='img/expert_photo5.png' alt='Железный Человек').expert__photo
+            h3.expert__name Железный Человек 
+            h4.expert__job Представитель компании Марвел
+          li.expert__card 
+            img(src='img/expert_photo6.png' alt='Енот Ракета').expert__photo
+            h3.expert__name Енот Ракета 
+            h4.expert__job Бариста
+        img(src='img/expert_arrow.png', alt='Стрелочка влево').expert__right 
+      input(tipe='submit' value='История ПКМ').expert__buttons_mini
+
+       

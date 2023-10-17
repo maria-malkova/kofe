@@ -1,0 +1,53 @@
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Oswald:wght@400;500&display=swap');
+/* Plugins */
+
+
+
+/* Blocks */
+
+body, ul, ol, li {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+button, input {
+  border: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+@import './src/blocks/salute/salute';
+@import './src/blocks/form/form';
+@import './src/blocks/icon/icon';
+@import './src/blocks/act/act';
+@import './src/blocks/roster/roster';
+@import './src/blocks/black/black';
+@import './src/blocks/delivery/delivery';
+@import './src/blocks/respect/respect';
+@import './src/blocks/choice/choice';
+@import './src/blocks/form2/form2';
+@import './src/blocks/header/header';
+@import './src/blocks/review/review';
+@import './src/blocks/expert/expert';
+@import './src/blocks/miniform/miniform';
+@import './src/blocks/access/access';
+@import './src/blocks/price/price';
+@import './src/blocks/footer/footer';
+@import './src/blocks/popup/popup';
+@import './src/blocks/contact/contact';

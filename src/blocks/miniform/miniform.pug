@@ -1,0 +1,7 @@
+mixin miniform(modifier)
+  section.miniform&attributes(attributes)
+    .miniform__area
+      h2.miniform__title Подписывайтесь <br/>на новости и акции
+      form(action='send.php' method='post').miniform__send
+            input(type='text' name='phone' placeholder='Введите ваш email').miniform__email
+            input(type='submit' value='Подписаться').miniform__buttons

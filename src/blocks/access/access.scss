@@ -1,0 +1,43 @@
+.access {
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 110px auto 10px;
+    }
+
+    &__title {
+        max-width: 540px;
+        margin-bottom: 40px;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: px-to-em(40);
+        line-height: lh-to-per(59, 40);
+        text-transform: uppercase;
+        color: #000000;
+    }
+
+    &__text {
+        max-width: 500px;
+        margin-bottom: 20px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 400;
+        font-size: px-to-em(17);
+        line-height: 140%;
+        color: #32363C;
+    }
+
+
+    @media screen and (max-width: 991px) {
+        &__area {
+            padding: 0 16px;
+        }
+
+        &__title {
+            font-size: px-to-em(32);
+            line-height: lh-to-per(47, 32);      
+        }
+
+    }
+  
+}

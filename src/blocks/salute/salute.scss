@@ -1,0 +1,86 @@
+.salute {
+  background: #F5F8F9;
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 80px 0 50px;
+    border-bottom: 1px solid #EAEAEA;
+    @include flex-dir(row, space-between, flex-end);
+  }
+
+  &__info {
+    max-width: 540px;
+  }
+
+  &__title {
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: px-to-em(40);
+    line-height: lh-to-per(59, 40);
+    text-transform: uppercase;
+    color: #1A1C1D;
+    margin-bottom: 30px;
+  }
+
+  &__subtitles {
+    font-weight: 400;
+    font-size: px-to-em(24);
+    line-height: 120%;
+    color: rgba(0,0,0,0.2);
+    margin-left: -8px;
+    margin-bottom: 18px;
+  }
+
+  &__subtitle {
+    color: #32363C;
+    background: #FED96A;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin: 0 6px;
+  }
+ 
+  &__text {
+    font-size: px-to-em(17);
+    line-height: 140%;
+    color: #332F2F;
+  }
+
+  @media screen and (max-width: 991px)  {
+    
+    &__area {
+      flex-direction: column;
+      padding: 142px 16px 0;
+      align-items: center;
+    }
+
+    &__title {
+      font-size: px-to-em(32);
+      line-height: lh-to-per(47, 32);
+    }
+
+    &__subtitles {
+      font-size: px-to-em(16);
+    }
+
+    &__subtitle {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+    
+    &__text {
+      font-size: px-to-em(16);
+      margin-bottom: 40px;
+    }
+
+    &__picture {
+      width: 100%;
+      max-width: 480px;
+    }
+    
+  }
+
+
+  
+
+}

@@ -1,0 +1,133 @@
+.respect {
+  &__area {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto 120px;
+  }
+
+  &__caption {
+    width: 100%;
+    max-width: 540px;
+    margin-bottom: 40px;
+
+    font-family: 'Oswald';
+    font-weight: 500;
+    font-size: px-to-em(40);
+    line-height: lh-to-per(59, 40);
+    text-transform: uppercase;
+    color: #1A1C1D;
+  }
+
+  &__disclaimer {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 68px;
+
+    font-weight: 400;
+    font-size: px-to-em(17);
+    line-height: 140%;
+    color: #32363C;
+  }
+
+  &__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+    border-bottom: 1px solid #EAEAEA;
+  }
+
+  &__name {
+    width: 100%;
+    max-width: 290px;
+
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: px-to-em(24);
+    line-height: 120%;
+    color: #1A1C1D;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 706px;
+
+    font-weight: 400;
+    font-size: px-to-em(17);
+    line-height: 140%;
+    color: #32363C;
+  }
+ 
+  @media screen and (max-width:991px) {
+    &__area {
+      padding: 0 16px;
+    }
+    
+    &__line {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__name {
+      margin-bottom: 20px;
+      max-width: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &::after {
+        content: "";
+        width: 12px;
+        height: 12px;
+        border-bottom: 2px solid #009688;
+        border-right: 2px solid #009688;
+        flex-shrink: 0; // сжатие элемента
+        transform: rotate(45deg);
+        margin-left: 5px;
+
+      }
+
+      &--hide{
+        &::after {
+          transform: rotate(-135deg);
+        }
+      }
+
+    }
+
+    &__text {
+      max-width: none;
+      display: none;
+
+      &--hide {
+        display: block;
+      }
+    }
+
+  }
+
+  @media screen and (max-width:481px) {
+    &__caption {
+      font-size: px-to-em(32);
+      line-height: lh-to-per(47, 40);
+    }
+
+    &__disclaimer {
+      font-size: px-to-em(16);
+    }
+
+    &__name {
+      font-size: px-to-em(22);
+    }
+
+    &__text {
+      font-size: px-to-em(16);
+    }
+
+
+  }
+
+
+}

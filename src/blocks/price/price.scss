@@ -1,0 +1,103 @@
+.price {
+    
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 30px auto 114px;
+    }
+
+    &__card {
+        margin-top: 30px;
+        @include flex-dir(row, space-between);
+     }
+
+    &__kilo, &__rub {
+        @include flex-dir;
+        padding: 30px 88px 50px;
+        background: #F5F8F9;
+    }
+
+    &__title {
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: px-to-em(80);
+        line-height: lh-to-per(119, 80);
+        text-transform: uppercase;
+        color: #32363C;
+    }
+
+    &__text {
+        font-size: 17px;
+        line-height: 140%;
+        color: #32363C;
+    }
+
+    @media screen and (max-width: 991px) {
+        &__area {
+            padding: 0 16px;
+        }
+
+        &__kilo, &__rub {
+            padding: 30px 66px 50px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        &__area {
+            padding: 0 16px;
+        }
+
+        &__kilo, &__rub {
+            padding: 30px 30px 50px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            font-size: px-to-em(32);
+            line-height: lh-to-per(47, 40);
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 130%;
+        }
+
+    }
+
+    @media screen and (max-width: 480px) {
+        &__area {
+            padding: 0 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__card {
+            margin-bottom: 10px;
+            flex-direction: column;
+        }
+
+        &__kilo, &__rub {
+            max-width: 100%;
+            padding: 30px;
+            text-align: center;
+        }
+
+        &__kilo {
+            margin-bottom: 16px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            font-size: px-to-em(32);
+            line-height: lh-to-per(47, 40);
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 130%;
+        }
+
+    }
+  
+}

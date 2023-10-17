@@ -1,0 +1,114 @@
+.popup {
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+
+    &__ask {
+        z-index: 1;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        background: rgba($color: #000000, $alpha: 0.5);
+    }
+
+    &--open {
+        display: flex;
+    }
+
+    &__form {
+        width: 100%;
+        max-width: 580px;
+        padding: 20px 40px 60px;
+
+        z-index: 4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background: #FFFFFF;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: px-to-em(40);
+        line-height: lh-to-per(59, 40);
+        text-transform: uppercase;
+        color: #1A1C1D;
+    }
+
+    &__text {
+        max-width: 340px;
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: px-to-em(17);
+        line-height: 140%;
+        color: #32363C;
+    }
+
+    &__input {
+        margin: 15px 0;
+        width: 480px;
+        height: 62px;
+        background: #FFFFFF;
+        border: 1px solid #EAEAEA;
+        padding: 20px;
+
+        font-weight: 400;
+        font-size: px-to-em(17);
+        line-height: 140%;
+        color: #32363C;
+        opacity: 0.4;
+    }
+
+    &__button {
+        padding: 20px 50px;
+
+        background: #009688;
+        border-radius: 100px;
+
+        font-weight: 600;
+        font-size: px-to-em(18);
+        line-height: lh-to-per(22, 18);
+        color: #FFFFFF;
+    }
+
+    &__close {
+        align-self: flex-end;
+        margin-right: -20px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 620px) {
+
+        padding: 16px;
+
+        &__title {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        &__text {
+            font-size: px-to-em(15);
+        }
+
+        &__input {
+            width: 100%;
+            font-size: px-to-em(14);
+        }
+
+        &__button {
+            padding: 20px 30px;
+            font-size: px-to-em(16);
+        }
+        
+    }
+
+  
+}

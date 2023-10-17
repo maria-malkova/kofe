@@ -1,0 +1,122 @@
+.delivery {
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 130px auto;
+
+        @include flex-dir($dir:row, $jc:space-between);
+    }
+
+    &__description {
+        max-width: 540px;
+        margin-right: 40px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: px-to-em(40);
+        line-height: lh-to-per (59, 40);
+        text-transform: uppercase;
+        color: #1A1C1D;
+    }
+
+    &__text {
+        max-width: 500px;
+        margin-bottom: 20px;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-size: px-to-em(17);
+        line-height: 140%;
+        color: #32363C;
+    }
+
+    &__track {
+        margin-top: 34px;
+        display: flex;
+        align-items: center;
+        max-width: 340px;
+        text-decoration: none;
+        display: inline-flex; /* Почему строчка сдвинулась на сайте чуть ниже? */
+        
+        &:hover {
+            border-bottom: 4px solid #009688;
+        }
+    }
+
+    &__know {
+        font-family: 'Lato';
+        margin-left: 14px;
+        font-weight: 400; // Lato 600 нет
+        font-size: px-to-em(18);
+        line-height: lh-to-per(22, 18);
+        color: #009688;
+    }
+
+    &__picture {
+        display: grid;
+        grid-template-columns: repeat(2, 251px);
+        gap: 1px;
+    }
+
+    &__img {
+        border-bottom: 1px solid #EAEAEA;
+
+        &:last-child, &:nth-last-child(2) {
+            border-bottom: none;
+        }
+
+        &:nth-child(odd) {
+            border-right: 1px solid #EAEAEA;
+        }
+    }
+
+
+    @media screen and (max-width: 991px) {
+
+        &__area {
+            flex-direction: column;
+            align-items: center;
+            padding: 0 16px;
+        }
+
+        &__description {
+            margin: 0;
+        }
+
+        &__title {
+            font-size: px-to-em(32);
+            line-height: lh-to-per(47, 32);
+            padding-top: 20px;
+        }
+
+        &__text {
+            font-size: px-to-em(16);
+        }
+
+        &__track {
+            margin-bottom: 44px;
+        }
+
+        &__picture {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(180px, 251px));
+            gap: 1px;
+        }
+
+        &__img {
+            width: 100%;
+            max-width: 251px;
+        }
+
+        
+
+        
+        
+    }
+
+
+
+
+}

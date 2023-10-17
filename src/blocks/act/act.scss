@@ -1,0 +1,65 @@
+.act {
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 0 auto 18px;
+        @include flex-dir(row, space-between, flex-start);
+    }
+
+    &__description {
+        max-width: 540px;
+    }
+    
+    &__title {
+        margin: 68px 0 40px;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: px-to-em(40);
+        line-height: lh-to-per(59, 40);
+        text-transform: uppercase;
+        color: #1A1C1D;
+    }
+
+    &__text {
+        max-width: 500px;
+        font-weight: 400;
+        font-size: px-to-em(17);
+        line-height: 140%;
+        color: #32363C;
+        margin-bottom: 20px;
+    }
+
+    &__picture {
+        margin-right: -140px;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 991px) {
+
+        &__area {
+            padding: 0 16px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__title {
+            font-size: px-to-em(32);
+            line-height: lh-to-per(47, 32);
+            margin: 0 0 20px;
+        }
+
+        &__text {
+            font-size: px-to-em(16);
+        }
+        
+        &__picture {
+            width: 100%;
+            max-width: 657px;
+            display: block;
+            align-items: center;
+            margin: 32px auto 40px;
+          }
+    }
+
+
+}

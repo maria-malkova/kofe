@@ -1,0 +1,18 @@
+mixin contact(cl='')
+  .contact(class=cl ? `${cl}__contact` : '') 
+      a.contact__tel(href='tel:+78126034911') +7 (812) 603 49 11 
+      .contact__social
+        .contact__icon
+          include img/telegram.svg
+        .contact__icon
+          include img/instagram.svg
+        .contact__icon
+          include img/vk.svg
+      ul.contact__list
+        li.contact__item 
+          a.contact__mail(href='mailto:info@pcmonline.ru')  info@pcmonline.ru
+        li.contact__item 
+          p.contact__address Санкт-Петербург, наб. Обводного канала д. 24
+        li.contact__item 
+          a.contact__link(href='#') Смотреть на карте
+      

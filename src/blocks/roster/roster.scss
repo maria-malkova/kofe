@@ -1,0 +1,95 @@
+.roster {
+    
+    &__area {
+        width: 100%;
+        max-width: 1080px;
+        margin: 18px auto 138px;
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 138px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        counter-reset: section;
+    }
+
+    &__text {
+        max-width: 290px;
+        font-weight: 400;
+        font-size: px-to-em(24);
+        line-height: 120%;
+        color: #32363C;
+        position: relative;
+        z-index: 1;
+
+        &::before {
+            counter-increment: section;
+            content: "0" counter(section);
+            position: absolute;
+            top: -90px;
+            z-index: -1;
+    
+            font-family: 'Oswald';
+            font-weight: 500;
+            font-size: px-to-em(50); 
+            line-height: lh-to-per(119, 50);
+            text-transform: uppercase;
+            color: #F5F8F9;
+        }
+
+        &:not(:nth-child(3n))::after {
+            content: '>';
+            position: absolute;
+            left: 320px;
+            top: -40px;
+    
+            font-family: 'Oswald';
+            font-weight: 500;
+            font-size: px-to-em(50);
+            line-height: lh-to-per(119, 60);
+            text-transform: uppercase;
+            color: #F5F8F9;
+        }
+    }
+
+    @media screen and (min-width:660px) and (max-width: 991px) {
+       
+        &__area {
+            padding: 0 16px;
+        }
+        
+        &__text:not(:nth-child(3n))::after {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 659px){
+        
+        &__area {
+            padding: 0 16px;
+        }
+
+        &__list {
+            row-gap: 90px;
+        }
+        
+        &__text:nth-child(even) {
+            text-align: right;
+            margin-left: auto;
+        }
+
+        &__text:nth-child(even)::before {
+            right: 0;
+        }
+
+        &__text:not(:nth-child(3n))::after {
+            display: none;
+        }
+    }
+
+}

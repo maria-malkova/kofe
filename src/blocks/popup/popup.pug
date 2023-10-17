@@ -1,0 +1,10 @@
+mixin popup(modifier)
+  section.popup&attributes(attributes)
+      form.popup__form(action='send.php' method='post')
+        img(src='img/cross.svg' alt='Х').popup__close
+        h2.popup__title Оставьте заявку и получите оптовый прайс на весь ассортимент кофе
+        p.popup__text Мы позвоним вам, вышлем оптовый прайс и ответим на все вопросы.
+        input(type='text' name='phone' placeholder='Ваш номер телефона').popup__input
+        input(type='text' name='email' placeholder='Ваш Email').popup__input
+        button.popup__button(type='submit') Оставить заявку
+      .popup__ask
